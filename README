@@ -1,0 +1,12 @@
+A very light-weight color picker which allows a user/admin to change color of a section
+
+Installing scaffoldhub gem
+gem install scaffoldhub
+
+if you are using bundler:
+gem 'scaffoldhub'
+and then 
+bundle install
+
+Use mcolorpicker scaffold:
+rails generate scaffoldhub author name:string color:string --scaffold colorpicker_scaffold/scaffold_spec.rb:color
