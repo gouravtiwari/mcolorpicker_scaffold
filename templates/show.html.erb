@@ -1,0 +1,11 @@
+<p id="notice"><%%= notice %></p>
+<div style="background-color: <%%= @<%= singular_table_name %>.<%= scaffold_parameter %> %>">
+<% for attribute in attributes -%>
+<p>
+  <b><%= attribute.human_name %>:</b>  
+  <%%= @<%= singular_table_name %>.<%= attribute.name %> %>
+</p>
+<% end -%>
+</div>
+<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+<%%= link_to 'Back', <%= index_helper %>_path %>
